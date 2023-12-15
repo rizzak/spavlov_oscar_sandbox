@@ -1,0 +1,11 @@
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-v --alluredir allure_report --clean-alluredir"
+
+filterwarnings = [
+    "ignore::pytest.PytestUnknownMarkWarning"
+]
+
+[tool.ruff]
+select = ["E", "F", "W"]
+line-length = 120
